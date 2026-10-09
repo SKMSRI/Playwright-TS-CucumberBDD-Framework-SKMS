@@ -2,8 +2,8 @@ import { defineConfig, devices } from '@playwright/test';
 import { defineBddConfig } from 'playwright-bdd'; 
 
 const testDir = defineBddConfig({
-  paths: ['tests/UI_Test/Feature/**.feature'],
-  steps: ['tests/UI_Test/Steps/**.ts'],
+  features: 'tests/UI_Test/Feature/**.feature',
+  steps: 'tests/UI_Test/Steps/*.ts',
 });
 
 /**
